@@ -4,6 +4,7 @@ import tkinter as tk
 from datetime import datetime
 
 def init_global_var():
+    g.out_dir = "out"
     g.csv_out_data = "out/data.csv"     # 生データ名
     g.csv_out_graph = "out/graph.csv"   # グラフ生成用データ名
     g.opng_out_graph = "out/graph.png"  # シミュレーション結果png

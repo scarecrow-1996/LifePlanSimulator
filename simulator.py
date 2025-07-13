@@ -1,13 +1,20 @@
 import global_var as g
 import utility
+import os
 
 def run():
     print("シミュレーション開始")
 
     """  初期化  """
-    if g.init_option.get():
-        print("初期化 Comming Soon..")
+    if not os.path.exists(g.out_dir):
+        os.mkdir(g.out_dir)
 
+    if g.init_option.get():
+        if os.path.exists(g.csv_out_data):
+            os.remove(g.csv_out_data)
+            print(f"✅ '{g.csv_out_data}' の初期化に成功しました。")
+        else:
+            print(f"❌ '{g.csv_out_data}' は見つかりませんでした。")
 
     """  シミュレーション処理  """
     # チェックされたオプションのみ実行
