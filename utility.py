@@ -29,8 +29,15 @@ def update_global_param_from_var():
     # オプション
     g.params["option"]["init"] = g.init_option.get()
     g.params["option"]["income"] = g.income_option.get()
+    g.params["option"]["stock"] = g.stock_option.get()
+    g.params["option"]["NISA"] = g.NISA_option.get()
+    g.params["option"]["iDeCo"] = g.iDeCo_option.get()
+    g.params["option"]["DC"] = g.DC_option.get()
+    g.params["option"]["retirement"] = g.retirement_option.get()
     g.params["option"]["housing"] = g.housing_option.get()
     g.params["option"]["daily"] = g.daily_option.get()
+    g.params["option"]["special"] = g.special_option.get()
+    g.params["option"]["car"] = g.car_option.get()
     g.params["option"]["education"] = g.education_option.get()
     g.params["option"]["nursing_care"] = g.nursing_care_option.get()
 
