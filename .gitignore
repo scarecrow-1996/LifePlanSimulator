@@ -1,0 +1,7 @@
+# 対象外のディレクトリ
+__pycache__
+out
+test
+
+# もしかしたらいるかも
+config
